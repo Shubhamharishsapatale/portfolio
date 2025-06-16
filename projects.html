@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - Shubham Sapatale</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
+  <body>
+    <div class="custom-cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Mobile Menu Button -->
+    <div class="mobile-menu-btn" id="mobileMenuBtn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+      <div class="mobile-menu">
+        <a href="index.html" class="mobile-menu-item">Home</a>
+        <a href="education.html" class="mobile-menu-item">Education</a>
+        <a href="experience.html" class="mobile-menu-item">Experience</a>
+        <a href="projects.html" class="mobile-menu-item active">Projects</a>
+        <a href="writings.html" class="mobile-menu-item">Writings</a>
+        <a href="contact.html" class="mobile-menu-item">Contact</a>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <a href="index.html" class="logo-text">Shubham Sapatale</a>
+        </div>
+
+        <!-- Desktop Menu -->
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="education.html" class="nav-link">Education</a>
+          </li>
+          <li class="nav-item">
+            <a href="experience.html" class="nav-link">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link active">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="writings.html" class="nav-link">Writings</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+      <div class="container">
+        <div class="section-title fadeInUp">
+          <h2>Projects</h2>
+          <div class="title-line"></div>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Ikshura -->
+          <div class="project-card fadeInUp">
+            <div class="project-image">
+              <img src="images/ikshura.png" alt="Ikshura Robotic Manipulator" />
+            </div>
+            <div class="project-content">
+              <h3>'Ikshura': A Robotic Manipulator for Sugarcane Harvesting</h3>
+              <span class="project-tag">MSc Dissertation</span>
+              <p>
+                For my MSc dissertation in Robotics at the University of
+                Sheffield, I designed and evaluated 'Ikshura' a robotic
+                manipulator aimed at improving sugarcane harvesting through
+                automation. The project addressed challenges like labour
+                shortages, crop damage, and energy inefficiency by developing a
+                lightweight, precision-controlled end-effector.
+              </p>
+              <p>
+                I created a fully parametric 3D model in Fusion 360, featuring a
+                dual-gripper mechanism for stalk stabilization and a NEMA17
+                motor-driven cutting blade. Finite Element Analysis using ANSYS
+                revealed that a 5 mm blade design performed significantly better
+                under simulated cutting stress, compared to a thinner 2 mm
+                version.
+              </p>
+              <p>
+                While the design showed promise in strength and control, future
+                improvements include refining blade geometry, incorporating
+                AI-driven perception, and testing under real field conditions to
+                account for environmental variability.
+              </p>
+            </div>
+          </div>
+
+          <!-- SLS Robot -->
+          <div class="project-card fadeInUp" style="animation-delay: 0.2s">
+            <div class="project-image">
+              <img src="images/SLS.jpg" alt="SLS Robot" />
+            </div>
+            <div class="project-content">
+              <h3>SLS Robot: Autonomous Navigation & Robotic Arm Control</h3>
+              <p>
+                Led a three-member team in developing the SLS Robot. A mobile
+                platform with autonomous navigation and a 2-DOF robotic arm
+                capable of whiteboard drawing. From concept to execution, we
+                built the robot entirely in-house, designing the chassis and arm
+                in Fusion 360 and fabricating components using laser-cut acrylic
+                and 3D printing.
+              </p>
+              <p>
+                The system was powered by an Arduino Mega, integrating
+                ultrasonic sensors, DC motors with encoders, and servo motors
+                for precise actuation. Implemented inverse kinematics for the
+                arm to accurately replicate drawings and developed sensor-based
+                logic for autonomous movement, including wall-following and
+                obstacle avoidance.
+              </p>
+              <p>
+                To ensure consistent marker contact, we designed a spring-loaded
+                end-effector, merging mechanical precision with intelligent
+                control in a compact, task-oriented robot.
+              </p>
+            </div>
+          </div>
+
+          <!-- TurtleBot3 -->
+          <div class="project-card fadeInUp" style="animation-delay: 0.4s">
+            <div class="project-image">
+              <img src="images/turtlebot.png" alt="TurtleBot3" />
+            </div>
+            <div class="project-content">
+              <h3>Autonomous Exploration with TurtleBot3 Using ROS and SLAM</h3>
+              <p>
+                In a team of four, I helped develop and deploy a ROS-based
+                system that enabled the TurtleBot3 Waffle to autonomously
+                explore and map a bounded arena using SLAM (Simultaneous
+                Localization and Mapping). Starting in simulation, we
+                implemented key behaviours like obstacle avoidance with LIDAR
+                data, wall-following, and randomized movement.
+              </p>
+              <p>
+                These capabilities were governed by a Finite State Machine (FSM)
+                to allow seamless switching between navigation modes. After
+                successful virtual testing, we transitioned to real-world
+                deployment, fine-tuning parameters for reliable operation.
+              </p>
+              <p>
+                Our system generated live maps as the robot explored,
+                demonstrating robust autonomy and intelligent spatial awareness.
+              </p>
+            </div>
+          </div>
+
+          <!-- Chemical Biodegradability -->
+          <div class="project-card fadeInUp" style="animation-delay: 0.6s">
+            <div class="project-image">
+              <img src="images/ML.png" alt="Machine Learning Model" />
+            </div>
+            <div class="project-content">
+              <h3>
+                Predicting Chemical Biodegradability Using Machine Learning
+              </h3>
+              <p>
+                Developed a logistic regression model to classify chemical
+                compounds as biodegradable or non-biodegradable using QSAR
+                (Quantitative Structure–Activity Relationship) data. Working
+                with a dataset of 1,055 compounds described by 41 structural and
+                physicochemical features, applied Local Outlier Factor to clean
+                the data, standardized the inputs, and used L2 regularization to
+                improve model generalization.
+              </p>
+              <p>
+                Hyperparameters were fine-tuned for optimal performance,
+                achieving an accuracy of 86.7%. The model's predictive strength
+                was further validated with an ROC curve, yielding an AUC score
+                of 0.82—demonstrating strong potential for real-world
+                applications in environmental impact assessment.
+              </p>
+            </div>
+          </div>
+
+          <!-- EBM Optimization -->
+          <div class="project-card fadeInUp" style="animation-delay: 0.8s">
+            <div class="project-image">
+              <img src="images/ITP.png" alt="Electron Beam Melting" />
+            </div>
+            <div class="project-content">
+              <h3>
+                Optimizing Electron Beam Melting Using Reinforcement Learning
+              </h3>
+              <p>
+                Led a five-member team in applying reinforcement learning to
+                optimize the Electron Beam Melting (EBM) process in additive
+                manufacturing. Our aim was to dynamically control the electron
+                beam power to maintain a consistent melt-pool temperature
+                crucial for part quality while minimizing energy consumption.
+              </p>
+              <p>
+                We implemented a Soft Actor-Critic (SAC) algorithm and
+                structured the control system across three spatial levels:
+                layer, track, and point. Through precise reward engineering and
+                strategic sampling methods like Full Factorial and Latin
+                Hypercube Sampling, we trained an RL agent that significantly
+                improved thermal stability and reduced energy use by 15%.
+              </p>
+              <p>
+                The point-level control stage delivered the highest precision,
+                showcasing the potential of intelligent control in
+                high-performance manufacturing.
+              </p>
+            </div>
+          </div>
+
+          <!-- Flow Boiling -->
+          <div class="project-card fadeInUp" style="animation-delay: 1s">
+            <div class="project-image">
+              <img src="images/Btech.png" alt="Flow Boiling Experiment" />
+            </div>
+            <div class="project-content">
+              <h3>
+                Flow Boiling Heat Transfer Enhancement Using Perforated Twisted
+                Tapes
+              </h3>
+              <span class="project-tag">Undergrad Dissertation</span>
+              <p>
+                For our Mechanical Engineering dissertation, my team of three
+                conducted an experimental study to enhance flow boiling heat
+                transfer of refrigerant R404A using custom-designed perforated
+                twisted tape inserts in a horizontal tube. These inserts, with
+                twist ratios of 8 and 10, served as passive turbulence promoters
+                aimed at improving the thermal efficiency of low-GWP, zero-ODP
+                refrigerants.
+              </p>
+              <p>
+                We built a dedicated test rig featuring a custom evaporator
+                section equipped with thermocouples and pressure transducers for
+                accurate data collection. The results demonstrated a marked
+                improvement in heat transfer performance, particularly in the
+                lower vapor quality range (10%–50%), with only a slight increase
+                in pressure drop, highlighting a practical and eco-conscious
+                method to boost thermal system efficiency.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/script.js"></script>
+    <script src="js/animations.js"></script>
+  </body>
+</html>
